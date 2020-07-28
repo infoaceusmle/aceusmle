@@ -306,30 +306,43 @@ input[type=submit]:hover {
 
 <div class="col-sm-6">
     <div class="form-container">
-        <form class="gform" method="POST" data-email="infoaceusmle@gmail.com" action="https://docs.google.com/spreadsheets/d/e/2PACX-1vQY3Ke62QukG3KhlpYdEexY1nveYE9G1HcB-ctkKmADPVQhP8-2JVpYuB0ZTpO2xP7ySBth8ICjSQb-/pubhtml">
-    <label for="fname">Name</label>
-    <input type="text" id="fname" name="Name" placeholder="Your name..">
-
+        <form class="gform" method="POST" data-email="infoaceusmle@gmail.com"
+        action="https://script.google.com/macros/s/AKfycbwCLLV9wdkqCaO55huLYdVdujRz5Ne0RV9ZTUJ6lg/exec">
+   
+    <fieldset class="pure-group">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Your name..">
+    </fieldset>
+        
+    <fieldset class="pure-group">
     <label for="address">Address</label>
-   <input type="text" id="address" name="Address" placeholder="Your address..">
-
+    <input type="text" id="address" name="address" placeholder="Your address..">
+    </fieldset>
+            
+    <fieldset class="pure-group">
     <label for="email">Email</label>
     <input type="text" id="email" name="email" placeholder="abc123@gmail.com"> 
-            
+    </fieldset>        
+    
+    <fieldset class="pure-group">
     <label for="phone">Phone</label>
-    <input type="text" id="phone" name="Phone" placeholder="Contact No..">         
+    <input type="text" id="phone" name="phone" placeholder="Contact No.."> 
+    </fieldset>
             
+    <fieldset class="pure-group">
     <label for="subject">Subject</label>
-    <textarea id="subject" name="Subject" placeholder="Subject here.." style="height:50px"></textarea>
-                    
+    <textarea id="subject" name="subject" placeholder="Subject here.." style="height:50px"></textarea>
+    </fieldset>
+    
+    <fieldset class="pure-group">
     <label for="description">Description</label>
-    <textarea id="description" name="Description" placeholder="Type your message here.. " style="height:100px"></textarea>        
-        
+    <textarea id="description" name="description" placeholder="Type your message here.. " style="height:100px"></textarea> 
+    </fieldset>
 
     <input type="submit" value="Submit" >
   </form>
 </div>
-    </div>
+</div>
     
 
 
@@ -340,7 +353,7 @@ input[type=submit]:hover {
 
 
 
-
+ <script data-cfasync="false" src="form-submission-handler.js"></script>
 
 </body>
-</html> 
+</html>
