@@ -126,9 +126,12 @@ input[type=submit]:hover {
             margin-left: 25%;
         }
         
-        .navbar navbar-expand-sm bg-light justify-content-center{
-            background-color: aqua;
-        }
+.required
+{
+    color: red;
+}
+        
+        
     </style>
 </head>
 <body>
@@ -222,9 +225,10 @@ input[type=submit]:hover {
                                         <!-- Review Section Ends Here -->
 
                                         <!-- Edison Photo-->
-<div class="edison">
+
+<!--<div class="edison">
 <img style="width: 100% ; height: 100% ; padding: 40px" src="edison.jpg">
-</div><br>      
+</div><br> -->      
                                         <!-- Edison Photo Ends here-->
 
                                         <!-- Tutoring Plans and Fees --> 
@@ -244,8 +248,8 @@ input[type=submit]:hover {
         </ul><br><br><br>
         
         
-         <button style="position: absolute; top: 104%; left: 50%; transform: translate(-50%, -50%);-ms-transform: translate(-50%, -50%);background-color: navy;color: white; font-size: 20px;padding: 12px 24px 12px 12px;border: none; cursor: pointer;border-radius:5px;
-  text-align: center;"><b>Book Now!</b></button>
+    <!--<button style="position: absolute; top: 104%; left: 50%; transform: translate(-50%, -50%);-ms-transform: translate(-50%, -50%);background-color: navy;color: white; font-size: 20px;padding: 12px 24px 12px 12px;border: none; cursor: pointer;border-radius:5px;
+  text-align: center;"><b>Book Now!</b></button> -->
     </div>
     
 <div class="col-sm-4">
@@ -259,8 +263,8 @@ input[type=submit]:hover {
 
 
         </ul><br><br><br><br>
-    <button style="position: absolute; top: 104%; left: 50%; transform: translate(-50%, -50%);-ms-transform: translate(-50%, -50%);background-color: navy;color: white; font-size: 20px;padding: 12px 24px 12px 12px;border: none; cursor: pointer;border-radius:5px;
-  text-align: center;"><b>Book Now!</b></button>
+<!--    <button style="position: absolute; top: 104%; left: 50%; transform: translate(-50%, -50%);-ms-transform: translate(-50%, -50%);background-color: navy;color: white; font-size: 20px;padding: 12px 24px 12px 12px;border: none; cursor: pointer;border-radius:5px;
+  text-align: center;"><b>Book Now!</b></button> -->
 </div>
 
     <div class="col-sm-4">
@@ -274,8 +278,8 @@ input[type=submit]:hover {
           <br>
 
         </ul><br><br><br><br>
-        <button style="position: absolute; top: 104%; left: 50%; transform: translate(-50%, -50%);-ms-transform: translate(-50%, -50%);background-color: navy;color: white; font-size: 20px;padding: 12px 24px 12px 12px;border: none; cursor: pointer;border-radius:5px;
-  text-align: center;"><b>Book Now!</b></button>
+   <!--     <button style="position: absolute; top: 104%; left: 50%; transform: translate(-50%, -50%);-ms-transform: translate(-50%, -50%);background-color: navy;color: white; font-size: 20px;padding: 12px 24px 12px 12px;border: none; cursor: pointer;border-radius:5px;
+  text-align: center;"><b>Book Now!</b></button> -->
     </div>
       
   </div>
@@ -285,18 +289,18 @@ input[type=submit]:hover {
 
                                         <!-- Schedule a session starts here -->
 
-<br><br><br><br>
+
 
 <div class="container">  
   <div class="row">
       <br><br>
     <div class="col-sm-12" >
         
-        <p style="font-size:40px ;color:red ; text-align: center">Schedule a Free Tutoring Session</span></p>
+        <p style="font-size:40px ;color:red ; text-align: center">Book a Session</span></p>
     
-    <p style="font-size:16px ;color:grey ; text-align: center">500 Terry Francois Street San Francisco, CA 94158</p>
+    <p style="font-size:16px ;color:grey ; text-align: center"><b> Fill the form to get in touch with us</b> </p>
     
-    <p style="font-size:16px ;color:black ; text-align: center">Write to us at:- info@aceusmle.com</p><br>  
+     
     </div>
     
 
@@ -307,50 +311,49 @@ input[type=submit]:hover {
         action="https://script.google.com/macros/s/AKfycbwCLLV9wdkqCaO55huLYdVdujRz5Ne0RV9ZTUJ6lg/exec">
    
     <fieldset class="pure-group">
-    <label for="name">Name</label>
-    <input type="text" id="name" name="name" placeholder="Your name..">
+    <label for="name">Name </label><span class="required"> *</span>
+    <input type="text" id="name" name="name" placeholder="Your name.." required>
     </fieldset>
         
     <fieldset class="pure-group">
-    <label for="address">Address</label>
-    <input type="text" id="address" name="address" placeholder="Your address..">
+    <label for="address">Address</label> <span class="required"> *</span>
+    <input type="text" id="address" name="address" placeholder="Your address.." required>
     </fieldset>
             
     <fieldset class="pure-group">
-    <label for="email">Email</label>
-    <input type="text" id="email" name="email" placeholder="abc123@gmail.com"> 
+    <label for="email">Email</label> <span class="required"> *</span>
+    <input type="text" id="email" name="email" placeholder="abc123@gmail.com" required> 
     </fieldset>        
     
     <fieldset class="pure-group">
-    <label for="phone">Phone</label>
-    <input type="text" id="phone" name="phone" placeholder="Contact No.."> 
+    <label for="phone">Phone</label> <span class="required"> *</span>
+    <input type="text" id="phone" name="phone" placeholder="Contact No.." required> 
     </fieldset>
             
     <fieldset class="pure-group">
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Subject here.." style="height:50px"></textarea>
+    <label for="subject">Subject</label> <span class="required"> *</span>
+    <textarea id="subject" name="subject" placeholder="Subject here.." style="height:50px" required></textarea>
     </fieldset>
     
     <fieldset class="pure-group">
-    <label for="description">Description</label>
-    <textarea id="description" name="description" placeholder="Type your message here.. " style="height:100px"></textarea> 
+    <label for="description">Description</label> <span class="required"> *</span>
+    <textarea id="description" name="description" placeholder="Type your message here.. " style="height:100px" required></textarea> 
     </fieldset>
 
-    <input type="submit" value="Submit" >
+    <input type="submit" value="Submit">
   </form>
 </div>
 </div>
-    
-
-
-    </div>
+</div>
 
   </div>
                                         <!-- Schedule a session ends here -->
 
-
+<br><br>
+ <p style="font-size:16px ;color:black ; text-align: center">For any query/assistance write to us at:- <b>info@aceusmle.com</b></p><br> 
 
  <script data-cfasync="false" src="form-submission-handler.js"></script>
+
 
 </body>
 </html>
